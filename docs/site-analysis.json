@@ -1,0 +1,26 @@
+{
+  "site_type": "E-commerce Frontend",
+  "title": "Meng TopUp",
+  "language": "en",
+  "frameworks": [],
+  "palette": [],
+  "fonts": [],
+  "typography": {
+    "body_font": null,
+    "body_size": null,
+    "body_color": null,
+    "background": null,
+    "heading_font": null,
+    "h1_size": null
+  },
+  "breakpoints": [
+    320
+  ],
+  "uses_flex": true,
+  "uses_grid": true,
+  "responsive": true,
+  "nav": [],
+  "forms": [],
+  "api_endpoints": [],
+  "page_count": 3
+}

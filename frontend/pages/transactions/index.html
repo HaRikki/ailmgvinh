@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Reconstructed by Universal Website Clone Bot from https://topup-testing-demo.vercel.app/transactions on 2026-11-02. For use by the site owner or with the owner's permission. --><html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Transactions - Meng TopUp</title>
+<link href="../../assets/css/style-e1702186.css" rel="stylesheet"/>
+<link href="../../assets/css/transactions-e8d3c27d.css" rel="stylesheet"/>
+<link href="../../assets/css/css2-3dc75e3b.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="header-content">
+<img alt="MENG TOPUP Logo" class="header-logo" src="../../assets/icons/logo-0572b858.jpg"/>
+<h1 style="font-family: 'Cabin Condensed', sans-serif; font-size: 40px; white-space: nowrap;">
+            MENG TOPUP
+        </h1>
+<a class="refresh-btn" href="">
+<img alt="refresh" class="refresh-icon" src="../../assets/images/refresh-d7ddc01d.png"/>
+</a>
+</div>
+</header>
+<main>
+<div class="transactions-container">
+<h2 class="title-english-heading" style="text-align: center; margin-bottom: 20px; color: var(--accent-color);">
+                Transaction History
+            </h2>
+<!-- Controls -->
+<div class="transactions-controls">
+<div class="control-group">
+<label class="khmer-heading">Filter by Status:</label>
+<select class="english-heading" id="statusFilter">
+<option value="all">All Status</option>
+<option value="completed">Completed</option>
+<option value="pending">Pending</option>
+<option value="expired">Expired</option>
+</select>
+</div>
+<div class="control-group">
+<label class="khmer-heading">Filter by Game:</label>
+<select class="english-heading" id="gameFilter">
+<option value="all">All Games</option>
+<option value="ml">Mobile Legends</option>
+<option value="ff">Free Fire</option>
+<option value="pubg">PUBG Mobile</option>
+<option value="hok">Honor of Kings</option>
+<option value="bloodstrike">Blood Strike</option>
+<option value="mcgg">Magic Chess</option>
+</select>
+</div>
+<div class="control-group">
+<label class="khmer-heading">Search:</label>
+<input class="english-heading" id="searchInput" placeholder="Transaction ID, Player ID..." type="text"/>
+</div>
+</div>
+<!-- Transactions Table -->
+<div class="transactions-table-container">
+<table class="transactions-table">
+<thead>
+<tr>
+<th class="english-heading">Transaction ID</th>
+<th class="english-heading">Status</th>
+<th class="english-heading">Game</th>
+<th class="english-heading">Player ID</th>
+<th class="english-heading">Zone ID</th>
+<th class="english-heading">Package</th>
+<th class="english-heading">Amount</th>
+<th class="english-heading">Date</th>
+</tr>
+</thead>
+<tbody id="transactionsTableBody">
+<tr>
+<td class="loading-cell english-heading" colspan="8">Loading transactions...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="pagination">
+<button class="pagination-btn" id="prevBtn">Previous</button>
+<span class="english-heading" id="pageInfo">Page 1 of 1</span>
+<button class="pagination-btn" id="nextBtn">Next</button>
+</div>
+<!-- Summary -->
+<div class="transactions-summary">
+<div class="summary-item">
+<span class="khmer-heading">Total Transactions:</span>
+<span class="english-heading" id="totalCount">0</span>
+</div>
+<div class="summary-item">
+<span class="khmer-heading">Completed:</span>
+<span class="english-heading" id="completedCount">0</span>
+</div>
+<div class="summary-item">
+<span class="khmer-heading">Pending:</span>
+<span class="english-heading" id="pendingCount">0</span>
+</div>
+<div class="summary-item">
+<span class="khmer-heading">Expired:</span>
+<span class="english-heading" id="expiredCount">0</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="mainFooter">
+<!-- Centered logo and text section -->
+<div class="footer-center">
+<img alt="MENG TOPUP Logo" class="footer-logo" src="../../assets/icons/logo-0572b858.jpg"/>
+<p class="khmer-heading footer-text">ទិញពេជ្រ Mobile Legends Free Fire ក្នុងតម្លៃសមរម្យ! តាមរយះអាយឌី ID របស់អ្នក, ជ្រើសរើសកញ្ចប់ពេជ្យ ដែលអ្នកពេញចិត្តទិញ, ដោយបង់ប្រាក់តាមមធ្យោបាយដែលអ្នកមាន, ពេជ្រនឹងបញ្ជូនទៅក្នុងគណនេយ្យ GAME របស់អ្នកក្នុងរយះពេលពីចន្លោះ 10នាទី ដល់ 3ម៉ោង។</p>
+</div>
+<!-- Left-aligned content sections -->
+<div class="footer-content">
+<div class="footer-section">
+<h3 class="khmer-heading">អំពីយើង</h3>
+<p class="khmer-heading">MENG TOPUP ផ្តល់សេវាកម្មបញ្ចូលពេជ្រល្អបំផុត:</p>
+<p class="khmer-heading">
+        ⚡️ ល្បឿនលឿន – ទទួលពេជ្រភ្លាមៗ បន្ទាប់ពីទូទាត់ <br/>
+        🪙 តម្លៃសមរម្យ – ថោកជាង និងមានប្រូម៉ូសិនជាញឹកញាប់<br/>
+        🛡️ សុវត្ថិភាព – ទូទាត់ដោយប្រព័ន្ធមានការការពារដ៏ទំនើប<br/>
+        💬 សេវាកម្ម 24/7 – មានបុគ្គលិករួសរាន់ជួយគ្រប់ពេល<br/></p>
+</div>
+<div class="footer-section">
+<h3 class="khmer-heading">វិធីបង់ប្រាក់</h3>
+<p class="khmer-heading">យើងទទួលការបង់ប្រាក់តាមរយៈ KHQR</p>
+</div>
+<div class="footer-section">
+<h3 class="khmer-heading">ទំនាក់ទំនង</h3>
+<p class="english-heading">
+    Telegram: 
+    <a class="telegram-link" href="https://t.me/MENGJONGREAL" rel="noopener noreferrer" target="_blank">
+      MENGTOPUPP
+    </a>
+</p>
+<p class="english-heading">
+    Facebook PAGE: 
+    <a class="facebook-link" href="https://web.facebook.com/profile.php?id=61567102657266" rel="noopener noreferrer" target="_blank">
+      MENG TOPUPP
+    </a>
+</p>
+<p class="english-heading">
+    Reseller: 
+    <a class="telegram-link" href="https://t.me/MENGJONGREAL" rel="noopener noreferrer" target="_blank">
+      Join Reseller
+    </a>
+</p>
+<p class="english-heading">
+    Mobile: 
+    <a class="telegram-link" href="https://t.me/MENGJONGREAL" rel="noopener noreferrer" target="_blank">
+      +855885555479
+    </a>
+</p>
+</div>
+<div class="footer-bottom">
+<p class="english-heading" style="text-align: center;">Copyright © MENG TOPUP. All Rights Reserved.</p>
+<p class="english-heading" style="text-align: center; margin-top: 20px;">
+<a href="#" style="color: #ffe600; text-decoration: underline;">
+        Privacy Policy | Terms and Conditions
+      </a>
+</p>
+</div>
+</div></footer></body>
+</html>
